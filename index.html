@@ -1,19 +1,302 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title></title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
-    </head>
-    <body>
-        <div class="container">
-            <header class="header"></header>
-            <main class="main"></main>
-            <div class="footer footer"></div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Квалитет — Честный результат / Официальный сайт производителя
+        Квалитет
+    </title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header__top">
+                        <h1 class="header__logo">
+                            <img src="./assets/image/logo.png" alt="Логотип - Квалитет" />
+                            <p>качество на всю жизнь</p>
+                        </h1>
+                        <form class="search header__search">
+                            <input type="search" type="text" placeholder="поиск по сайту" />
+                            <button type="submit">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/icon/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="header__feedback">
+                            <svg class="icon">
+                                <use xlink:href="./assets/icon/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <a href="tel:88007007077" title="позвоните нам">+7 (800) 700-70-77</a>
+                        </div>
+                        <a href="#!" class="header__message" title="написать сообщение">
+                            <svg class="icon">
+                                <use xlink:href="./assets/icon/sprite.svg#icon-message"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <div class="container">
+                    <ul class="header__list">
+                        <li class="header__item header__item-catalog">
+                            каталог
+                            <ul class="header__nested-list">
+                                <li class="header__nested-item">
+                                    <a href="#!">Ручной инструмент</a>
+                                </li>
+                                <li class="header__nested-item">
+                                    <a href="#!">Измерительный инструмент</a>
+                                </li>
+                                <li class="header__nested-item">
+                                    <a href="#!">Оснастка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            новости и акции
+                            <ul class="header__nested-list">
+                                <li class="header__nested-item">
+                                    <a href="#!">Новости</a>
+                                </li>
+                                <li class="header__nested-item">
+                                    <a href="#!">Акций</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            где купить
+                            <ul class="header__nested-list">
+                                <li class="header__nested-item">
+                                    <a href="#!">онлайн магазины</a>
+                                </li>
+                                <li class="header__nested-item">
+                                    <a href="#!">Розничные магазины</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!">диллерам</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!">о компании</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="firstscreen">
+                <img src="./assets/image/home/firstscreen.jpg" alt="инструменты лежашие на столе" />
+                <svg class="icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-line-header"></use>
+                </svg>
+            </div>
+            <div class="provide">
+                <div class="container">
+                    <h2>Мы предоставляем</h2>
+                    <ul class="provide__wrap">
+                        <li>
+                            <a href="#!" title="переход к странице ручных инструментов">
+                                <div class="provide__item">
+                                    <svg class="icon provide__line">
+                                        <use xlink:href="./assets/icon/sprite.svg#icon-line-provide"></use>
+                                    </svg>
+                                    <div>
+                                        <img src="./assets/image/provide-1.png" alt="инструменты" />
+                                        <p>Ручной инструмент</p>
+                                    </div>
+                                    <svg class="icon provide__arrow-right">
+                                        <use xlink:href="./assets/icon/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" title="переход к странице с измерительными инструментами">
+                                <div class="provide__item">
+                                    <svg class="icon provide__line">
+                                        <use xlink:href="./assets/icon/sprite.svg#icon-line-provide"></use>
+                                    </svg>
+
+                                    <div>
+                                        <img src="./assets/image/provide-2.png" alt="рулетка" />
+                                        <p>Измерительный инструмент</p>
+                                    </div>
+                                    <svg class="icon provide__arrow-right">
+                                        <use xlink:href="./assets/icon/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" title="переход к странице с оснасткой">
+                                <div class="provide__item">
+                                    <svg class="icon provide__line">
+                                        <use xlink:href="./assets/icon/sprite.svg#icon-line-provide"></use>
+                                    </svg>
+                                    <div>
+                                        <img src="./assets/image/provide-3.png" alt="болт" />
+                                        <p>Оснастка</p>
+                                    </div>
+                                    <svg class="icon provide__arrow-right">
+                                        <use xlink:href="./assets/icon/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about">
+                <div class="container">
+                    <div class="about__left">
+                        <h2>О компании</h2>
+                        <p>КВАЛИТЕТ — профессиональный ручной инструмент</p>
+                        <ol>
+                            <li>Выгодная цена</li>
+                            <li>Широкий ассортимент наборов</li>
+                            <li>Производится специально для России</li>
+                            <li>Соответствует всем требованиям и Российскому ГОСТу</li>
+                            <li>Протестирован Центром испытаний, сертификации и аттестации</li>
+                        </ol>
+                        <button class="button">узнать о компании</button>
+                    </div>
+                    <div class="about__right">
+                        <img src="./assets/image/home/about.jpg" alt="мужчина в рабочей форме">
+                    </div>
+                </div>
+            </div>
+            <div class="cooperation">
+                <img src="./assets/image/home/cooperation.jpg" alt="мужчина разговаривает по телефону">
+                <form>
+                    <fieldset>
+                        <input type="text" placeholder="имя" required>
+                        <input type="email" placeholder="e-mail" required>
+                        <textarea name="message" placeholder="ваше сообщение" required></textarea>
+                        <button type="submit" class="button">отправить</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="news">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <p><time datetime="2020-10-09">09.10.2020</time></p>
+                            <p>Завершен сентябрьский этап
+                                конкурса отзывов</p>
+                            <a href="#!">подробнее</a>
+                        </li>
+                        <li>
+                            <p><time datetime="2020-10-09">09.10.2020</time></p>
+                            <p>Завершен сентябрьский этап
+                                конкурса отзывов</p>
+                            <a href="#!">подробнее</a>
+                        </li>
+                        <li>
+                            <p><time datetime="2020-10-09">09.10.2020</time></p>
+                            <p>Завершен сентябрьский этап
+                                конкурса отзывов</p>
+                            <a href="#!">подробнее</a>
+                        </li>
+                        <li>
+                            <p><time datetime="2020-10-09">09.10.2020</time></p>
+                            <p>Завершен сентябрьский этап
+                                конкурса отзывов</p>
+                            <a href="#!">подробнее</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <nav class="footer__menu">
+                        <ul class="footer__list">
+                            <li class="footer__item footer__item-catalog">
+                                каталог
+                                <ul class="footer__nested-list">
+                                    <li class="footer__nested-item">
+                                        <a href="#!">Ручной инструмент</a>
+                                    </li>
+                                    <li class="footer__nested-item">
+                                        <a href="#!">Измерительный инструмент</a>
+                                    </li>
+                                    <li class="footer__nested-item">
+                                        <a href="#!">Оснастка</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer__item">
+                                новости и акции
+                                <ul class="footer__nested-list">
+                                    <li class="footer__nested-item">
+                                        <a href="#!">Новости</a>
+                                    </li>
+                                    <li class="footer__nested-item">
+                                        <a href="#!">Акций</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer__item">
+                                где купить
+                                <ul class="footer__nested-list">
+                                    <li class="footer__nested-item">
+                                        <a href="#!">онлайн магазины</a>
+                                    </li>
+                                    <li class="footer__nested-item">
+                                        <a href="#!">Розничные магазины</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!">диллерам</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!">о компании</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__right">
+                        <form class="search footer__search">
+                            <input type="search" type="text" placeholder="поиск по сайту" />
+                            <button type="submit">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/icon/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <ul class="footer__feedback-list">
+                            <li class="footer__feedback-item">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/icon/sprite.svg#icon-message"></use>
+                                </svg>
+                                <a href="mailto:info@квалитет52.рф"
+                                    titile="напишите нам на почту">info@квалитет52.рф</a>
+                            </li>
+                            <li class="footer__feedback-item">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/icon/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <a href="tel:88007007077" title="позвоните нам">+7 (800) 700-70-77</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <script src="./assets/js/script.js"></script>
-    </body>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
