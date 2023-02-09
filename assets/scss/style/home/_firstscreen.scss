@@ -1,7 +1,21 @@
 .firstscreen {
-    img{
+    position: relative;
+    height: calc(100vh - 118px);
+    width: 100vw;
+    margin: 120px 0 70px;
+    img {
         width: 100%;
+        height: calc(100% - 30px);
+        object-fit: cover;
     }
-    .icon {
-    }
+}
+.firstscreen::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: -30px;
+    width: calc(100vw + 30px);
+    height: 30px;
+    background: url(../icon/icon-header-line.svg);
 }

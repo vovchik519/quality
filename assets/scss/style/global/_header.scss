@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     z-index: 50;
-        background-color: white;
+    background-color: white;
 
     // .header__top
 
@@ -60,8 +60,8 @@
             opacity: 0.5;
         }
         button {
-            width: 20px;
-            height: 20px;
+            width: 23px;
+            height: 23px;
             margin-left: 10px;
             background-color: transparent;
         }
@@ -70,27 +70,29 @@
 
     &__feedback {
         display: flex;
-        align-items: center;
-        column-gap: 5px;
         margin-right: 30px;
-        .icon {
-            width: 24px;
-            height: 24px;
-        }
         a {
-            width: 180px;
+            width: 220px;
             font-weight: 700;
             font-size: 20px;
             line-height: 27px;
             color: #000000;
+            white-space: nowrap;
+        }
+        img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
         }
     }
 
     // .header__message
 
     &__message {
-        width: 30px;
-        height: 27px;
+        img {
+            width: 30px;
+            height: 27px;
+        }
     }
 
     // .header__menu
