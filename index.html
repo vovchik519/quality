@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700" rel="stylesheet" />
     <title>
         Квалитет — Честный результат / Официальный сайт производителя
         Квалитет
@@ -16,39 +17,37 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="header__wrap">
-                    <div class="header__top">
-                        <h1 class="header__logo">
-                            <img src="./assets/image/logo.png" alt="Логотип - Квалитет" />
-                            <p>качество на всю жизнь</p>
-                        </h1>
-                        <form class="search header__search">
-                            <input type="search" type="text" placeholder="поиск по сайту" />
-                            <button type="submit">
-                                <svg class="icon">
-                                    <use xlink:href="./assets/icon/sprite.svg#icon-search"></use>
-                                </svg>
-                            </button>
-                        </form>
-                        <div class="header__feedback">
+                <div class="header__top">
+                    <h1 class="header__logo">
+                        <img src="./assets/image/logo.png" alt="Логотип - Квалитет" />
+                        <p>качество на всю жизнь</p>
+                    </h1>
+                    <form class="header__search">
+                        <input type="search" type="text" placeholder="поиск по сайту" />
+                        <button type="submit">
                             <svg class="icon">
-                                <use xlink:href="./assets/icon/sprite.svg#icon-phone"></use>
+                                <use xlink:href="./assets/icon/sprite.svg#icon-search"></use>
                             </svg>
-                            <a href="tel:88007007077" title="позвоните нам">+7 (800) 700-70-77</a>
-                        </div>
-                        <a href="#!" class="header__message" title="написать сообщение">
-                            <svg class="icon">
-                                <use xlink:href="./assets/icon/sprite.svg#icon-message"></use>
-                            </svg>
-                        </a>
+                        </button>
+                    </form>
+                    <div class="header__feedback">
+                        <svg class="icon">
+                            <use xlink:href="./assets/icon/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <a href="tel:88007007077" title="позвоните нам">+7 (800) 700-70-77</a>
                     </div>
+                    <a href="#!" class="header__message" title="написать сообщение">
+                        <svg class="icon">
+                            <use xlink:href="./assets/icon/sprite.svg#icon-message"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <nav class="header__menu">
                 <div class="container">
                     <ul class="header__list">
                         <li class="header__item header__item-catalog">
-                            каталог
+                            <p class="header__item-name">каталог</p>
                             <ul class="header__nested-list">
                                 <li class="header__nested-item">
                                     <a href="#!">Ручной инструмент</a>
@@ -62,7 +61,7 @@
                             </ul>
                         </li>
                         <li class="header__item">
-                            новости и акции
+                            <p class="header__item-name">новости и акции</p>
                             <ul class="header__nested-list">
                                 <li class="header__nested-item">
                                     <a href="#!">Новости</a>
@@ -73,7 +72,7 @@
                             </ul>
                         </li>
                         <li class="header__item">
-                            где купить
+                            <p class="header__item-name">где купить</p>
                             <ul class="header__nested-list">
                                 <li class="header__nested-item">
                                     <a href="#!">онлайн магазины</a>
@@ -84,10 +83,10 @@
                             </ul>
                         </li>
                         <li class="header__item">
-                            <a href="#!">диллерам</a>
+                            <a href="#!" class="header__item-name">диллерам</a>
                         </li>
                         <li class="header__item">
-                            <a href="#!">о компании</a>
+                            <a href="#!" class="header__item-name">о компании</a>
                         </li>
                     </ul>
                 </div>
@@ -216,6 +215,18 @@
                     </ul>
                 </div>
             </div>
+            <div class="map">
+                <div style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.kz/maps/org/pravleniye_tsn_uspenskoye/97691802231/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Правление ТСН Успенское</a><a
+                        href="https://yandex.kz/maps/1/moscow-and-moscow-oblast/category/government_administration/184105658/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Администрация в Москве и
+                        Московской
+                        области</a><iframe
+                        src="https://yandex.kz/map-widget/v1/?ll=37.064664%2C55.703203&mode=poi&poi%5Bpoint%5D=37.064327%2C55.697894&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D97691802231&z=15.11"
+                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                        style="position:relative;"></iframe></div>
+            </div>
         </main>
         <div class="footer">
             <div class="container">
@@ -267,7 +278,7 @@
                         </ul>
                     </nav>
                     <div class="footer__right">
-                        <form class="search footer__search">
+                        <form class="footer__search">
                             <input type="search" type="text" placeholder="поиск по сайту" />
                             <button type="submit">
                                 <svg class="icon">
