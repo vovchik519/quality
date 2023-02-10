@@ -6,7 +6,8 @@
     // .provide__wrap
     &__wrapper {
         display: flex;
-        column-gap: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     // .provide__item

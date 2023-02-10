@@ -102,6 +102,7 @@ h6 {
 h1 {
   font-size: 32px;
   line-height: 44px;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -170,6 +171,7 @@ h3 {
 
 .page__list {
   margin-top: 40px;
+  margin-bottom: 11px;
   display: flex;
 }
 .page__list li {
@@ -373,7 +375,24 @@ h3 {
   border-bottom: 1px solid #999999;
 }
 
+@media (min-width: 768px) {
+  .header__nested-list {
+    overflow-y: auto;
+    max-height: 70vh;
+  }
+  .header__nested-list::-webkit-scrollbar {
+    width: 7px;
+  }
+  .header__nested-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #978a8c;
+  }
+  .header__nested-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ee7f01;
+  }
+}
 .footer {
+  margin-top: 70px;
   background-color: #1e1e1e;
   padding: 40px 0px 43px;
   color: white;

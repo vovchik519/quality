@@ -6,6 +6,8 @@
 .firstscreen__title h1 {
   width: 0;
   height: 0;
+  margin: 0;
+  padding: 0;
   visibility: hidden;
 }
 .firstscreen img {
@@ -34,8 +36,8 @@
 }
 .provide__wrapper {
   display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .provide__item {
   position: relative;
@@ -186,14 +188,15 @@
 }
 .news ul {
   display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .news ul li {
   background-color: #ffffff;
   border: 1px solid #e3e3e3;
   border-radius: 5px 5px 0px 0px;
   padding: 10px;
+  max-width: 280px;
 }
 .news ul a,
 .news ul time {
@@ -212,4 +215,5 @@
 
 .map {
   margin-top: 60px;
+  margin-bottom: -70px;
 }

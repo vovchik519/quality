@@ -1,0 +1,105 @@
+.lists {
+    // .lists__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px 20px;
+    }
+    &__item {
+        position: relative;
+        width: 380px;
+    }
+    &__item.active {
+        .lists__wrap::after {
+            transform: rotate(180deg);
+        }
+        .lists__nested-wrapper {
+            position: static;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+    }
+    // .lists__wrap
+
+    &__wrap {
+        position: relative;
+        background-color: white;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        width: 100%;
+        padding: 20px;
+        cursor: pointer;
+        z-index: 1;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            margin-right: 40px;
+        }
+    }
+    &__wrap::after {
+        content: url(../icon/icon-arrow-bottom.svg);
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        width: 15px;
+        height: 10px;
+    }
+    &__nested-wrapper {
+        position: absolute;
+        top: -1000%;
+        left: -1000%;
+        padding: 30px 20px 20px;
+        margin-top: -10px;
+        background-color: white;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 0 0 5px 5px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+        li {
+            width: 100%;
+            cursor: default;
+            a {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: black;
+                transition: 0.3s;
+                padding-right: 100px;
+            }
+        }
+        a::after {
+            content: url(../icon/icon-arrow-right.svg);
+            position: absolute;
+            display: block;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 20px;
+            right: 20px;
+            transition: 0.3s;
+        }
+        li:hover a {
+            color: #ee7f01;
+        }
+        li:hover a::after {
+            transform: translateY(-50%) scale(1.35);
+        }
+    }
+}
