@@ -1,0 +1,30 @@
+.news {
+    margin-top: 135px;
+    h2 {
+        margin-bottom: 30px;
+    }
+    ul {
+        display: flex;
+        column-gap: 20px;
+        li {
+            background-color: #ffffff;
+            border: 1px solid #e3e3e3;
+            border-radius: 5px 5px 0px 0px;
+            padding: 10px;
+        }
+        a,
+        time {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: #ee7f01;
+        }
+        time{
+            margin-bottom: 20px;
+        }
+        p{
+            line-height: 19px;
+            margin-bottom: 10px;
+        }
+    }
+}

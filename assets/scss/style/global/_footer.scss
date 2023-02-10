@@ -1,0 +1,129 @@
+.footer {
+    background-color: #1e1e1e;
+    padding: 40px 0px 43px;
+    color: white;
+    a {
+        color: white;
+    }
+    // .footer__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 60px;
+    }
+    // .footer__list
+
+    &__list {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    // .footer__item
+
+    &__item {
+        p,
+        a {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 10px;
+            width: 100%;
+            white-space: nowrap;
+        }
+    }
+    &__item-link:hover a {
+        color: #ee7f01;
+    }
+    &__item-link:active a {
+        opacity: 0.23;
+    }
+
+    // .footer__nested-item
+
+    &__nested-item {
+        cursor: pointer;
+        a {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 5px;
+            color: white;
+            text-transform: lowercase;
+            transition: 0.2s;
+        }
+    }
+    &__nested-item:hover a {
+        color: #ee7f01;
+    }
+    &__nested-itema:active {
+        color: white;
+        opacity: 0.23;
+    }
+
+    // .footer__right
+
+    &__right {
+        ul {
+            font-weight: 600;
+            li {
+                cursor: pointer;
+                a {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    transition: 0.2s;
+                    width: 100%;
+                }
+            }
+            li:hover a {
+                color: #999999;
+            }
+        }
+    }
+
+    // .footer__search
+
+    &__search {
+        width: 280px;
+        height: 42px;
+        background: rgba(246, 246, 246, 0.1);
+        border: 1px solid rgba(227, 227, 227, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        input {
+            background-color: transparent;
+            width: 100%;
+            font-size: 16px;
+            line-height: 22px;
+            color: #ffffff50;
+        }
+        button {
+            width: 23px;
+            height: 23px;
+            margin-left: 10px;
+            background-color: transparent;
+        }
+    }
+
+    // .footer__feedback-list
+
+    &__feedback-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7.5px;
+    }
+
+    // .footer__feedback-item
+
+    &__feedback-item {
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

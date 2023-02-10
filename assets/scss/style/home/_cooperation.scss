@@ -1,0 +1,45 @@
+.cooperation {
+    margin-top: 70px;
+    h2 {
+        margin-bottom: 40px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        background-color: white;
+    }
+    img {
+        width: 735px;
+        height: 350px;
+    }
+    form {
+        margin-left: 125px;
+        fieldset {
+            display: flex;
+            flex-direction: column;
+        }
+        textarea,
+        input {
+            padding: 10px;
+            width: 320px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: transparent;
+            font-size: 14px;
+            line-height: 19px;
+            color: rgba(0, 0, 0, 0.5);
+            background-color: white;
+        }
+        input {
+            height: 40px;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+    }
+    .button {
+        width: 100%;
+    }
+}
