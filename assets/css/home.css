@@ -2,7 +2,11 @@
   position: relative;
   height: calc(100vh - 118px);
   width: 100vw;
-  margin-top: 120px;
+}
+.firstscreen__title h1 {
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 .firstscreen img {
   width: 100%;
@@ -20,12 +24,6 @@
   width: calc(100vw + 30px);
   height: 30px;
   background: url(../icon/icon-header-line.svg);
-}
-
-h2 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
 }
 
 .provide {
@@ -46,11 +44,22 @@ h2 {
   max-width: 380px;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
+  overflow: hidden;
 }
 .provide__line {
-  width: 100%;
+  width: 760px;
   height: 10px;
   border-radius: 5px 5px 0 0;
+  transition: 0.3s;
+  transform: translateX(-45%);
+}
+.provide__item:hover .provide__line {
+  animation: animLine 1s ease forwards;
+}
+@keyframes animLine {
+  to {
+    transform: translateX(-29.8%);
+  }
 }
 .provide__wrap {
   display: flex;

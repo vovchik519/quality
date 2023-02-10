@@ -2,7 +2,13 @@
     position: relative;
     height: calc(100vh - 118px);
     width: 100vw;
-    margin-top: 120px;
+    &__title{
+        h1{
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    }
     img {
         width: 100%;
         height: calc(100% - 30px);

@@ -1,8 +1,3 @@
-h2 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
-}
 .provide {
     margin-top: 70px;
     h2 {
@@ -23,11 +18,22 @@ h2 {
         max-width: 380px;
         border: 1px solid #e3e3e3;
         border-radius: 5px;
+        overflow: hidden;
     }
     &__line {
-        width: 100%;
+        width: 760px;
         height: 10px;
         border-radius: 5px 5px 0 0;
+        transition: 0.3s;
+        transform: translateX(-45%);
+    }
+    &__item:hover &__line {
+        animation: animLine 1s ease forwards;
+    }
+    @keyframes animLine {
+        to {
+            transform: translateX(-29.8%);
+        }
     }
     &__wrap {
         display: flex;
