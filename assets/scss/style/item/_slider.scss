@@ -1,12 +1,10 @@
 .product__item {
-    .product__slider {
+    &-slider {
         position: relative;
         background-color: white;
         width: 480px;
         height: 480px;
         padding: 10px;
-    }
-    .swiper {
     }
     .my-swiper {
         width: 460px;
@@ -40,14 +38,16 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            cursor: pointer;
         }
     }
     .swiper-scrollbar-wrap {
         position: absolute;
         display: block;
-        bottom: 0;
+        bottom: 2px;
         left: 50%;
         width: 150px;
+        height: 1px;
         transform: translateX(-50%);
     }
     .swiper-scrollbar {
@@ -55,6 +55,7 @@
         height: 1px;
         background: #e3e3e3;
         border-radius: 2px;
+        opacity: 1 !important;
         .swiper-scrollbar-drag {
             height: 1px;
             background: #ee7f01;

@@ -21,10 +21,6 @@
             margin-top: 10px;
         }
         span {
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 38px;
-            color: #ee7f01;
             float: right;
         }
     }
@@ -37,7 +33,7 @@
         width: 260px;
         height: 260px;
         object-fit: cover;
-        transition: .5s;
+        transition: 0.5s;
     }
     &__item:hover &__img {
         transform: scale(1.1);

@@ -172,3 +172,23 @@ h3 {
         display: none;
     }
 }
+.price {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #ee7f01;
+    span {
+        font-weight: 400;
+        margin-left: 7px;
+    }
+}
+.border-dashed {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    z-index: -1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
