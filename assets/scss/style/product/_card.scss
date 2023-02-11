@@ -1,0 +1,65 @@
+.product {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 20px;
+    }
+    &__item {
+        position: relative;
+        width: 280px;
+        height: 375px;
+        padding: 10px;
+        background-color: white;
+        overflow: hidden;
+        a {
+            width: 100%;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            color: black;
+            margin-top: 10px;
+        }
+        span {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 38px;
+            color: #ee7f01;
+            float: right;
+        }
+    }
+    &__image {
+        width: 260px;
+        height: 260px;
+        overflow: hidden;
+    }
+    &__img {
+        width: 260px;
+        height: 260px;
+        object-fit: cover;
+        transition: .5s;
+    }
+    &__item:hover &__img {
+        transform: scale(1.1);
+    }
+    &__line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 760px;
+        height: 10px;
+        border-radius: 5px 5px 0 0;
+        transition: 0.3s;
+        transform: translateX(-45%);
+        opacity: 0.5;
+    }
+    &__item:hover &__line {
+        animation: animLine 1s ease forwards;
+        opacity: 1;
+    }
+    @keyframes animLine {
+        to {
+            transform: translateX(-29.8%);
+        }
+    }
+}

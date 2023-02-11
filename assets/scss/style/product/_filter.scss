@@ -1,0 +1,12 @@
+.product {
+    &__filter {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__filter-wrap {
+        align-items: center;
+        display: inline-flex;
+        background-color: white;
+    }
+}
