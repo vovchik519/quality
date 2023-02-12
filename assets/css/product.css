@@ -4,9 +4,20 @@
   justify-content: flex-end;
 }
 .product__filter-wrap {
-  align-items: center;
   display: inline-flex;
   background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.product__filter-wrap select,
+.product__filter-wrap option,
+.product__filter-wrap p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.product__filter-wrap select {
+  color: #EE7F01;
 }
 
 .product__list {
