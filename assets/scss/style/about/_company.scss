@@ -1,0 +1,43 @@
+.about {
+    // .about__company
+
+    &__company {
+        margin-top: 70px;
+    }
+
+    // .about__subtitle
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        margin-top: 45px;
+        font-size: 28px;
+        line-height: 38px;
+        img {
+            width: 200px;
+            height: 50px;
+        }
+    }
+
+    // .about__wiki
+
+    &__wiki {
+        margin-top: 35px;
+        display: flex;
+        column-gap: 20px;
+        p {
+            font-size: 20px;
+            line-height: 27px;
+            max-width: 780px;
+            span {
+                font-weight: 600;
+            }
+        }
+        img {
+            width: 380px;
+            height: 350px;
+            border-radius: 5px;
+        }
+    }
+}
