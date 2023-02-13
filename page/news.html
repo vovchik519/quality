@@ -8,9 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700" rel="stylesheet" />
     <title>Квалитет - Честный результат - Официальный сайт производителя Квалитет</title>
     <link rel="icon" type="image/png" href="./../assets/image/favicon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./../assets/css/style.css" />
-    <link rel="stylesheet" href="./../assets/css/item.css" />
+    <link rel="stylesheet" href="./../assets/css/news.css" />
 </head>
 
 <body>
@@ -94,90 +93,75 @@
             <div class="container">
                 <ul class="page__list">
                     <li><a href="./../index.html">Главная</a></li>
-                    <li><a href="./catalog.html">Каталог товаров</a></li>
-                    <li><a href="./product.html">Болторезы</a></li>
-                    <li id="page__list-item"></li>
+                    <li><a href="./news.html">Новости</a></li>
                 </ul>
-                <div class="product__item">
-                    <h1>Болторез Квалитет 350 мм БЛР-350</h1>
-                    <div class="product__item-wrapper">
-                        <div class="product__item-slider">
-                            <div class="swiper my-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div thumbsSlider="" class="swiper my-swiper2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./../assets/image/product/product-full.jpg" alt="товар" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-scrollbar-wrap">
-                                <div class="swiper-scrollbar"></div>
-                            </div>
+                <div class="news">
+                    <h1>Новости</h1>
+                    <div class="news__tab">
+                        <div class="news__tab-btn">
+                            <button type="button" class="tab-links active"
+                                onclick="openTab(event, 'news')">Новости</button>
+                            <button type="button" class="tab-links" onclick="openTab(event, 'action')">Акций</button>
                         </div>
-                        <div class="product__item-description">
-                            <h3>Описание</h3>
-                            <p>Режущий элемент болтореза изготовлен из инструментальной углеродистой стали Т8 (У8).
-                                Рукоятка из углеродистой стали
-                                с обрезиненными накладками.</p>
-                            <h3>Характеристики</h3>
-                            <ul>
-                                <li>Диаметр прутка<span></span>5мм</li>
-                                <li>Диаметр прутка<span></span>5мм</li>
-                                <li>Диаметр прутка<span></span>5мм</li>
-                                <li>Диаметр прутка<span></span>5мм</li>
-                            </ul>
-                            <span class="price">1500<span>₽</span></span>
-                            <button type="button" class="button">где купить?</button>
-                            <canvas class="border-dashed-680" width="680" height="480">
-                            </canvas>
+                        <div class="news__tab-wrapper">
+                            <div id="news" class="tab-content">
+                                <ul class="news__list">
+                                    <li class="news__item">
+                                        <div class="news__item-info">
+                                            <p><time datetime="2020-10-09">09.10.2020</time></p>
+                                            <h3>Победители конкурса отзывов за ноябрь</h3>
+                                            <p class="news__item-text">Далеко-далеко за Далеко-далеко за Далеко-далеко за Далеко-далеко за
+                                            </p>
+                                            <a href="#!">узнать больше</a>
+                                        </div>
+                                        <img src="../assets/image/news/img.jpg" alt="изображение">
+                                    </li>
+                                    <li class="news__item">
+                                        <div class="news__item-info">
+                                            <p><time datetime="2020-10-09">09.10.2020</time></p>
+                                            <h3>Победители конкурса отзывов за ноябрь</h3>
+                                            <p class="news__item-text">Стали известны 
+                                            </p>
+                                            <a href="#!">узнать больше</a>
+                                        </div>
+                                        <img src="../assets/image/news/img.jpg" alt="изображение">
+                                    </li>
+                                    <li class="news__item">
+                                        <div class="news__item-info">
+                                            <p><time datetime="2020-10-09">09.10.2020</time></p>
+                                            <h3>Победители конкурса отзывов за ноябрь</h3>
+                                            <p class="news__item-text">Стали известны
+                                            </p>
+                                            <a href="#!">узнать больше</a>
+                                        </div>
+                                        <img src="../assets/image/news/img.jpg" alt="изображение">
+                                    </li>
+                                    <li class="news__item">
+                                        <div class="news__item-info">
+                                            <p><time datetime="2020-10-09">09.10.2020</time></p>
+                                            <h3>Победители конкурса отзывов за ноябрь</h3>
+                                            <p class="news__item-text">журчит использовало свой гор текст решила составитель. Возвращайся, парадигматическая запятых! Мир буквоград дороге сбить вдали?
+                                            </p>
+                                            <a href="#!">узнать больше</a>
+                                        </div>
+                                        <img src="../assets/image/news/img.jpg" alt="изображение">
+                                    </li>
+                                    <li class="news__item">
+                                        <div class="news__item-info">
+                                            <p><time datetime="2020-10-09">09.10.2020</time></p>
+                                            <h3>Победители конкурса отзывов за ноябрь</h3>
+                                            <p class="news__item-text">Стали известны имена победителей конкурса отзывов
+                                            </p>
+                                            <a href="#!">узнать больше</a>
+                                        </div>
+                                        <img src="../assets/image/news/img.jpg" alt="изображение">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="action" class="tab-content">
+                                2
+                                2
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -257,9 +241,8 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./../assets/js/border.js"></script>
-    <script src="./../assets/js/slider.js"></script>
+    <script src="./../assets/js/tabs.js"></script>
+    <script src="./../assets/js/limitText.js"></script>
     <script src="./../assets/js/script.js"></script>
 </body>
 
