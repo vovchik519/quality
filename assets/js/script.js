@@ -7,7 +7,11 @@ listsItems.forEach(function (listsItemsA) {
 
 let h1 = document.querySelector("h1");
 let pageListItem = document.querySelector("#page__list-item");
-document.title = h1.textContent + " - Официальный сайт производителя Квалитет";
-if (pageListItem) {
-    pageListItem.textContent = h1.textContent;
+if (h1) {
+    document.title = h1.textContent + " - Официальный сайт производителя Квалитет";
+    if (pageListItem) {
+        pageListItem.textContent = h1.textContent;
+    }
+} else {
+    console.error("Элемент h1 не найден.");
 }
