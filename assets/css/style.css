@@ -140,6 +140,7 @@ h3 {
 }
 
 .button {
+  display: inline-block;
   background-color: #ee7f01;
   border-radius: 5px;
   font-weight: 700;

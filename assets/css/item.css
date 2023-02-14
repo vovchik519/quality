@@ -102,3 +102,6 @@
 .product__item .border-dashed-680 {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
+.product__item .button {
+  width: 280px;
+}
