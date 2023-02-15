@@ -108,3 +108,140 @@
   padding-bottom: 10px;
   border-bottom: 1px solid #e3e3e3;
 }
+
+.product__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 20px;
+}
+.product__item {
+  position: relative;
+  width: 280px;
+  height: 375px;
+  padding: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+.product__item a {
+  width: 100%;
+}
+.product__item p {
+  font-size: 16px;
+  line-height: 22px;
+  color: black;
+  margin-top: 10px;
+}
+.product__item span {
+  float: right;
+}
+.product__image {
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+}
+.product__img {
+  width: 260px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.product__item:hover .product__img {
+  transform: scale(1.1);
+}
+.product__line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 760px;
+  height: 10px;
+  border-radius: 5px 5px 0 0;
+  transition: 0.3s;
+  transform: translateX(-45%);
+  opacity: 0.5;
+}
+.product__item:hover .product__line {
+  animation: animLine 1s ease forwards;
+  opacity: 1;
+}
+@keyframes animLine {
+  to {
+    transform: translateX(-29.8%);
+  }
+}
+
+.action__wrapper {
+  margin-top: 70px;
+  transform: translateX(-200px);
+}
+.action__wrapper h2 {
+  margin-bottom: 40px;
+}
+.action__image img {
+  width: 980px;
+  height: 356px;
+  border-radius: 5px;
+}
+.action__product {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.action__product p {
+  font-size: 24px;
+  line-height: 33px;
+  width: 680px;
+}
+.action__product span {
+  font-weight: 600;
+}
+.action__product img {
+  width: 480px;
+  height: 198px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.action .product__item {
+  position: relative;
+}
+.action .product__item .sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+}
+.action .product__item .sale span {
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: white;
+}
+.action .product__item .sale::before {
+  content: url(./../icon/sale.svg);
+  position: absolute;
+  display: block;
+  width: 89px;
+  height: 47px;
+}
+.action .product__item .price__wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.action .product__item .price__wrap s, .action .product__item .price__wrap span {
+  line-height: 0.8em;
+}
+.action .product__item .before-price {
+  color: black;
+  opacity: 0.5;
+  font-size: 16px;
+  line-height: 22px;
+}
