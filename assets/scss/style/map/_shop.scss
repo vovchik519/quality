@@ -1,0 +1,30 @@
+#shop {
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    a{
+        color: black;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding: 10px;
+        width: 260px;
+        border: 1px solid #ee7f01;
+        border-radius: 5px;
+        img {
+            width: 100px;
+            height: 50px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.map__tab-btn {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 2px;
+}
+.map__tab-btn .tab-links {
+  position: relative;
+  display: inline-block;
+  text-align: start;
+  background: #ffffff;
+  width: 280px;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  overflow-x: hidden;
+}
+.map__tab-btn .tab-links::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -5%;
+  bottom: 0px;
+  width: 110%;
+  height: 1px;
+  background: #e3e3e3;
+}
+.map__tab-btn .tab-links:last-child::before {
+  display: none;
+}
+.map__tab-btn .tab-links.active {
+  color: #ee7f01;
+}
+.map .tab-content {
+  display: none;
+}
+.map #map {
+  display: block;
+}
+.map__tab {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+#map h2 {
+  margin-bottom: 20px;
+}
+#map input {
+  width: 380px;
+  height: 42px;
+  border: 1px solid #ee7f01;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px;
+  background-color: #f6f6f6;
+}
+
+.map__wrapper {
+  margin-top: 40px;
+  width: 1180px;
+  transform: translateX(-304px);
+}
+.map__contact-wrap {
+  font-style: normal;
+}
+.map__contact-row {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.map__contact-row:last-child {
+  margin-top: 30px;
+}
+.map__contact-item {
+  width: 380px;
+}
+.map__contact-item h2 {
+  margin-bottom: 20px;
+}
+.map__contact-item a,
+.map__contact-item p {
+  font-size: 20px;
+  line-height: 27px;
+}
+.map__contact-item a {
+  color: #EE7F01;
+  font-weight: 600;
+}
+
+#shop h2 {
+  margin-bottom: 30px;
+}
+
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.shop a {
+  color: black;
+}
+.shop__item {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 10px;
+  width: 260px;
+  border: 1px solid #ee7f01;
+  border-radius: 5px;
+}
+.shop__item img {
+  width: 100px;
+  height: 50px;
+}
+.shop__item p {
+  font-weight: 600;
+  font-size: 18px;
+}

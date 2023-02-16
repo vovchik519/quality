@@ -146,8 +146,9 @@
   background-color: white;
 }
 .cooperation img {
-  width: 735px;
-  height: 350px;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .cooperation form {
   margin-left: 125px;
