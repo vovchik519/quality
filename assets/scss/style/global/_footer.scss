@@ -17,6 +17,7 @@
 
     &__list {
         display: flex;
+        align-items: flex-start;
         column-gap: 30px;
     }
 
@@ -30,13 +31,14 @@
             line-height: 25px;
             margin-bottom: 10px;
             width: 100%;
+            height: 100%;
             white-space: nowrap;
         }
     }
-    &__item-link:hover a {
+    &__item-link a:hover  {
         color: #ee7f01;
     }
-    &__item-link:active a {
+    &__item-link a:active {
         opacity: 0.23;
     }
 
