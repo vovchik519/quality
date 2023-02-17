@@ -15,3 +15,12 @@ if (h1) {
 } else {
     console.error("Элемент h1 не найден.");
 }
+
+let bodyOverflow = document.querySelector('body');
+let menuBtn = document.querySelector('.menu-btn');
+let headerWrap = document.querySelector('.header__menu-wrapper');
+menuBtn.addEventListener('click', function () {
+    menuBtn.classList.toggle('active');
+    headerWrap.classList.toggle('active');
+    bodyOverflow.classList.toggle('active');
+})

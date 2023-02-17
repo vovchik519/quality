@@ -23,73 +23,96 @@
                         </a>
                         <p>качество на всю жизнь</p>
                     </div>
-                    <form class="header__search">
-                        <input type="search" placeholder="поиск по сайту" />
-                        <button type="submit">
-                            <img src="./assets/icon/icon-search.svg" alt="поиск">
-                        </button>
-                    </form>
-                    <div class="header__feedback">
+                    <div class="menu-btn" id="menu-btn" aria-label="меню">
+                    </div>
+                    <div class="header__search-wrap">
+                        <form class="header__search">
+                            <input type="search" placeholder="поиск по сайту" />
+                            <button type="submit">
+                                <img src="./assets/icon/icon-search.svg" alt="поиск">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="header__feedback-wrap">
+                        <div class="header__feedback">
+                            <a href="tel:88007007077" title="позвоните нам"><img src="./assets/icon/icon-phone.svg"
+                                    alt="телефон">+7
+                                (800)
+                                700-70-77</a>
+                        </div>
+                        <a href="#!" class="header__message" title="написать сообщение">
+                            <img src="./assets/icon/icon-message.svg" alt="сообщение">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu-wrapper">
+                <div class="container">
+                    <div class="header__logo-mobile">
+                        <a href="./index.html" title="главная страница">
+                            <img src="./assets/image/logo-mobile.png" alt="Логотип - Квалитет" />
+                        </a>
+                    </div>
+                </div>
+                <nav class="header__menu">
+                    <div class="container">
+                        <ul class="header__list">
+                            <li class="header__item header__item-catalog">
+                                <p class="header__item-name">каталог</p>
+                                <ul class="header__nested-list">
+                                    <li class="header__nested-item">
+                                        <a href="./page/catalog.html">Ручной инструмент</a>
+                                    </li>
+                                    <li class="header__nested-item">
+                                        <a href="./page/catalog.html">Измерительный инструмент</a>
+                                    </li>
+                                    <li class="header__nested-item">
+                                        <a href="./page/catalog.html">Оснастка</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <p class="header__item-name">новости и акции</p>
+                                <ul class="header__nested-list">
+                                    <li class="header__nested-item">
+                                        <a href="./page/news.html">Новости</a>
+                                    </li>
+                                    <li class="header__nested-item">
+                                        <a href="./page/news.html?param=action">Акций</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <p class="header__item-name">где купить</p>
+                                <ul class="header__nested-list">
+                                    <li class="header__nested-item">
+                                        <a href="./page/map.html">онлайн магазины</a>
+                                    </li>
+                                    <li class="header__nested-item">
+                                        <a href="./page/map.html?param=shop">Розничные магазины</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a href="./page/dealers.html" class="header__item-name">диллерам</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="./page/about.html" class="header__item-name">о компании</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="header__feedback-mobile">
                         <a href="tel:88007007077" title="позвоните нам"><img src="./assets/icon/icon-phone.svg"
                                 alt="телефон">+7
                             (800)
                             700-70-77</a>
                     </div>
-                    <a href="#!" class="header__message" title="написать сообщение">
-                        <img src="./assets/icon/icon-message.svg" alt="сообщение">
-                    </a>
                 </div>
             </div>
-            <nav class="header__menu">
-                <div class="container">
-                    <ul class="header__list">
-                        <li class="header__item header__item-catalog">
-                            <p class="header__item-name">каталог</p>
-                            <ul class="header__nested-list">
-                                <li class="header__nested-item">
-                                    <a href="./page/catalog.html">Ручной инструмент</a>
-                                </li>
-                                <li class="header__nested-item">
-                                    <a href="./page/catalog.html">Измерительный инструмент</a>
-                                </li>
-                                <li class="header__nested-item">
-                                    <a href="./page/catalog.html">Оснастка</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__item">
-                            <p class="header__item-name">новости и акции</p>
-                            <ul class="header__nested-list">
-                                <li class="header__nested-item">
-                                    <a href="./page/news.html">Новости</a>
-                                </li>
-                                <li class="header__nested-item">
-                                    <a href="./page/news.html?param=action">Акций</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__item">
-                            <p class="header__item-name">где купить</p>
-                            <ul class="header__nested-list">
-                                <li class="header__nested-item">
-                                    <a href="./page/map.html">онлайн магазины</a>
-                                </li>
-                                <li class="header__nested-item">
-                                    <a href="./page/map.html?param=shop">Розничные магазины</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__item">
-                            <a href="./page/dealers.html" class="header__item-name">диллерам</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="./page/about.html" class="header__item-name">о компании</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
         </header>
-        <main class="main">
+        <!-- <main class="main">
             <div class="firstscreen">
                 <div class="firstscreen__title">
                     <h1>Квалитет - Честный результат</h1>
@@ -285,7 +308,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <script src="./assets/js/script.js"></script>

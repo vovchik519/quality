@@ -37,6 +37,9 @@ body {
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
+    @media (max-width: 768px) {
+        font-size: 3.889vw;
+    }
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -97,8 +100,12 @@ h3 {
     line-height: 27px;
 }
 .container {
-    max-width: 1180px;
+    max-width: 1260px;
+    padding: 0 40px;
     margin: 0 auto;
+    @media (max-width: 768px) {
+        padding: 0vw 5.556vw;
+    }
 }
 .wrapper {
     display: flex;
