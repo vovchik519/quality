@@ -662,7 +662,7 @@ h3 {
     color: white;
     overflow: visible;
   }
-  .header__item:hover p {
+  .header__item p:hover {
     color: #ee7f01;
   }
   .header__item-name:hover + .header__nested-list, .header__nested-list:hover {
@@ -689,7 +689,7 @@ h3 {
     width: 5.556vw;
     height: 2.222vw;
   }
-  .header__item-catalog:hover svg {
+  .header__item-catalog p:hover svg {
     fill: #ee7f01;
     transform: translate(50%, 100%) rotate(90deg);
   }

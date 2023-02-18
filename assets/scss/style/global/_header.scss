@@ -446,7 +446,7 @@
             color: white;
             overflow: visible;
         }
-        &__item:hover p {
+        &__item p:hover {
             color: #ee7f01;
         }
         &__item-name:hover + &__nested-list,
@@ -478,7 +478,7 @@
                 height: 2.222vw;
             }
         }
-        &__item-catalog:hover {
+        &__item-catalog p:hover {
             svg {
                 fill: #ee7f01;
                 transform: translate(50%, 100%) rotate(90deg);
