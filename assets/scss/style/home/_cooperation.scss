@@ -6,14 +6,19 @@
     &__wrapper {
         display: flex;
         align-items: center;
+        min-height: 350px;
         background-color: white;
     }
     img {
         width: 50%;
+        height: 350px;
         object-fit: cover;
     }
     form {
-        margin-left: 125px;
+        margin-left: 8.5vw;
+        @media (max-width: 1024px) {
+            margin-left: 5vw;
+        }
         fieldset {
             display: flex;
             flex-direction: column;

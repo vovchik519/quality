@@ -1,4 +1,8 @@
-.map{
-    margin-top: 60px;
-    margin-bottom: -70px;
+.map {
+    margin: 60px 0 -70px;
+}
+@media (max-width: 768px) {
+    .map {
+        margin: 13.889vw 0 -13.889vw;
+    }
 }
