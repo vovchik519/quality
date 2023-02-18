@@ -99,6 +99,20 @@ h3 {
     font-size: 20px;
     line-height: 27px;
 }
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8.889vw;
+        line-height: 12.222vw;
+    }
+    h2 {
+        font-size: 6.667vw;
+        line-height: 9.167vw;
+    }
+    h3 {
+        font-size: 5.556vw;
+        line-height: 7.5vw;
+    }
+}
 .container {
     max-width: 1260px;
     padding: 0 40px;
@@ -117,6 +131,9 @@ h3 {
 }
 .main {
     margin-top: 120px;
+    @media (max-width: 768px) {
+        margin-top: 29.158vw;
+    }
     flex: 1 0 auto;
 }
 .footer {
@@ -133,6 +150,13 @@ h3 {
     padding: 10px;
     white-space: nowrap;
     transition: 0.3s;
+    @media (max-width: 768px) {
+        border-radius: 1.389vw;
+        font-size: 4.444vw;
+        line-height: 6.111vw;
+        padding: 2.778vw;
+        padding: 1.389vw 2.778vw;
+    }
 }
 .button.button-white {
     border: 1px solid #ee7f01;

@@ -135,7 +135,7 @@
         height: 35px;
         white-space: nowrap;
         text-transform: lowercase;
-        p{
+        p {
             cursor: pointer;
         }
     }
@@ -163,6 +163,9 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 27px;
+        svg {
+            display: none;
+        }
         ul {
             font-weight: 600;
         }
@@ -324,7 +327,7 @@
     display: none;
 }
 @media (max-width: 768px) {
-    body.lock{
+    body.lock {
         overflow: hidden;
     }
     .menu-btn {
@@ -349,7 +352,6 @@
         background-size: contain;
     }
     .header {
-        position: relative;
         box-shadow: 0px 0px 2.778vw rgba(0, 0, 0, 0.25);
         width: 100vw;
         &__menu-wrapper {
@@ -358,7 +360,7 @@
         &__menu-wrapper.active {
             display: block;
             position: absolute;
-            overflow-Y: scroll;
+            overflow-y: scroll;
             overflow-x: hidden;
             left: 0;
             top: 0;
@@ -369,6 +371,18 @@
             box-shadow: 0vw 0vw 2.778vw rgba(0, 0, 0, 0.25);
             border-radius: 0vw;
             padding: 5.556vw 0;
+        }
+        &__menu-wrapper.active::-webkit-scrollbar {
+            width: 1.389vw;
+        }
+
+        &__menu-wrapper.active::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 1.667vw #f6f6f6;
+        }
+
+        &__menu-wrapper.active::-webkit-scrollbar-thumb {
+            border-radius: 1.389vw;
+            background-color: #ee7f01;
         }
         &__menu {
             background-color: black;
@@ -448,6 +462,7 @@
                 display: none;
             }
             svg {
+                display: block;
                 transform: translate(50%, 100%);
                 fill: white;
                 transition: 0.2s;
@@ -495,6 +510,7 @@
         // .header__logo
 
         &__logo {
+            margin: 0;
             img {
                 width: 33.333vw;
                 height: 8.333vw;

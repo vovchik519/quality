@@ -133,6 +133,8 @@
 }
 @media (max-width: 768px) {
     .footer {
+        margin-top: 13.889vw;
+        padding: 13.889vw 0;
         &__wrapper {
             gap: 8.333vw 0;
             flex-direction: column;

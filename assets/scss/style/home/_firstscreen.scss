@@ -2,8 +2,8 @@
     position: relative;
     height: calc(100vh - 118px);
     width: 100vw;
-    &__title{
-        h1{
+    &__title {
+        h1 {
             width: 0;
             height: 0;
             margin: 0;
@@ -26,4 +26,46 @@
     width: calc(100vw + 30px);
     height: 30px;
     background: url(../icon/icon-header-line.svg);
+}
+@media (max-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        .firstscreen {
+            order: 1;
+        }
+        .menu-mobile {
+            order: 2;
+        }
+        .title-mobile {
+            order: 3;
+        }
+        .subscription-mobile {
+            order: 5;
+        }
+        .provide {
+            order: 6;
+        }
+        .about {
+            order: 7;
+        }
+        .cooperation {
+            display: none;
+        }
+        .news {
+            order: 4;
+        }
+        .map {
+            order: 8;
+        }
+    }
+    .firstscreen {
+        height: 55.556vw;
+        img {
+            height: 100%;
+        }
+    }
+    .firstscreen::before {
+        display: none;
+    }
 }

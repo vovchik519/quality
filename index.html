@@ -59,10 +59,9 @@
                         <ul class="header__list">
                             <li class="header__item header__item-catalog">
                                 <p class="header__item-name">каталог
-                                    <svg viewBox="0 0 21 8" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                    <svg viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
-                                            d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"/>
+                                            d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" />
                                     </svg>
                                 </p>
                                 <ul class="header__nested-list">
@@ -119,11 +118,50 @@
             </div>
         </header>
         <main class="main">
-            <!-- <div class="firstscreen">
+            <div class="firstscreen">
                 <div class="firstscreen__title">
                     <h1>Квалитет - Честный результат</h1>
                 </div>
                 <img src="./assets/image/home/firstscreen.jpg" alt="инструменты лежашие на столе" />
+            </div>
+            <nav class="menu-mobile">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="./page/news.html">
+                                <img src="./assets/image/menu-mobile/image.png" alt="иконка">
+                                <p>новости и акции</p>
+                            </a>
+                        </li>
+                        <a href="./page/news.html">
+                            <img src="./assets/image/menu-mobile/image-1.png" alt="иконка">
+                            <p>где купить</p>
+                        </a>
+                        </li>
+                        <a href="./page/news.html">
+                            <img src="./assets/image/menu-mobile/image-2.png" alt="иконка">
+                            <p>дилерам</p>
+                        </a>
+                        </li>
+                        <a href="./page/news.html">
+                            <img src="./assets/image/menu-mobile/image-3.png" alt="иконка">
+                            <p>о компании</p>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="title-mobile">
+                <div class="container">
+                    <div class="title-mobile-wrap">
+                        <h2>КВАЛИТЕТ —</h2>
+                        <p>
+                            профессиональный ручной инструмент
+                            узнать о компании
+                        </p>
+                        <button class="button">узнать о компании</button>
+                    </div>
+                </div>
             </div>
             <div class="provide">
                 <div class="container">
@@ -138,8 +176,12 @@
                                             class="provide__icon" />
                                         <p>Ручной инструмент</p>
                                     </div>
-                                    <img src="./assets/icon/icon-arrow-right.svg" alt="стрелка в право"
-                                        class="provide__arrow" />
+                                    <picture>
+                                        <source media="(max-width: 768px)"
+                                            srcset="./assets/icon/icon-arrow-right-provide-mobile.svg">
+                                        <img src="./assets/icon/icon-arrow-right.svg" alt="стрелка в право"
+                                            class="provide__arrow" />
+                                    </picture>
                                 </div>
                             </a>
                         </li>
@@ -148,11 +190,16 @@
                                 <div class="provide__item">
                                     <img src="./assets/icon/icon-line-provide.svg" alt="линия" class="provide__line" />
                                     <div class="provide__wrap">
-                                        <img src="./assets/image/provide/provide-2.png" alt="рулетка" class="provide__icon" />
+                                        <img src="./assets/image/provide/provide-2.png" alt="рулетка"
+                                            class="provide__icon" />
                                         <p>Измерительный инструмент</p>
                                     </div>
-                                    <img src="./assets/icon/icon-arrow-right.svg" alt="стрелка в право"
-                                        class="provide__arrow" />
+                                    <picture>
+                                        <source media="(max-width: 768px)"
+                                            srcset="./assets/icon/icon-arrow-right-provide-mobile.svg">
+                                        <img src="./assets/icon/icon-arrow-right.svg" alt="стрелка в право"
+                                            class="provide__arrow" />
+                                    </picture>
                                 </div>
                             </a>
                         </li>
@@ -161,18 +208,23 @@
                                 <div class="provide__item">
                                     <img src="./assets/icon/icon-line-provide.svg" alt="линия" class="provide__line" />
                                     <div class="provide__wrap">
-                                        <img src="./assets/image/provide/provide-3.png" alt="болт" class="provide__icon" />
+                                        <img src="./assets/image/provide/provide-3.png" alt="болт"
+                                            class="provide__icon" />
                                         <p>Оснастка</p>
                                     </div>
-                                    <img src="./assets/icon/icon-arrow-right.svg" alt="стрелка в право"
-                                        class="provide__arrow" />
+                                    <picture>
+                                        <source media="(max-width: 768px)"
+                                            srcset="./assets/icon/icon-arrow-right-provide-mobile.svg">
+                                        <img src="./assets/icon/icon-arrow-right.svg" alt="стрелка в право"
+                                            class="provide__arrow" />
+                                    </picture>
                                 </div>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="about">
+            <!-- <div class="about">
                 <div class="container">
                     <div class="about__wrapper">
                         <div class="about__left">
@@ -192,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="cooperation">
                 <div class="container">
                     <h2>Заявки на сотрудничество</h2>
@@ -240,7 +292,49 @@
                     </ul>
                 </div>
             </div>
-            <div class="map">
+            <div class="news news-mobile">
+                <div class="container">
+                    <h2>Новости</h2>
+                    <ul>
+                        <li>
+                            <a href="#!">
+                                <p><time datetime="2020-10-09">09.10.2020</time></p>
+                                <p>Завершен сентябрьский этап
+                                    конкурса отзывов</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <p><time datetime="2020-10-09">09.10.2020</time></p>
+                                <p>Завершен сентябрьский этап
+                                    конкурса отзывов</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <p><time datetime="2020-10-09">09.10.2020</time></p>
+                                <p>Завершен сентябрьский этап
+                                    конкурса отзывов</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <p><time datetime="2020-10-09">09.10.2020</time></p>
+                                <p>Завершен сентябрьский этап
+                                    конкурса отзывов</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subscription-mobile">
+                <div class="container">
+                    <h3>Подпишитесь на наши новостные рассылки</h3>
+                    <input type="email" placeholder="e-mail" required>
+                    <button class="button">подписаться</button>
+                </div>
+            </div>
+            <!-- <div class="map">
             </div> -->
         </main>
         <div class="footer">

@@ -1,0 +1,24 @@
+.subscription-mobile {
+    display: none;
+}
+@media (max-width: 768px) {
+    .subscription-mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5.556vw;
+        input {
+            font-size: 3.333vw;
+            line-height: 4.444vw;
+            border: 0.278vw solid #000000;
+            border-radius: 1.389vw;
+            width: 100%;
+            padding: 2.778vw;
+            background-color: transparent;
+            margin-top: 3.889vw;
+        }
+        .button {
+            width: 100%;
+            margin-top: 3.889vw;
+        }
+    }
+}

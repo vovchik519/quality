@@ -1,0 +1,30 @@
+.title-mobile {
+    display: none;
+}
+@media (max-width: 768px) {
+    .title-mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8.334vw;
+        &-wrap {
+            padding: 5.556vw 2.778vw;
+            background: #ffffff;
+            box-shadow: 0px 0px 2.778vw rgba(0, 0, 0, 0.25);
+            border-radius: 1.389vw;
+        }
+        h2 {
+            color: #ee7f01;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 3.889vw;
+            line-height: 5.278vw;
+            font-weight: 600;
+            text-transform: lowercase;
+        }
+        .button {
+            width: 100%;
+            margin-top: 5.556vw;
+        }
+    }
+}
