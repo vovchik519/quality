@@ -63,6 +63,10 @@
             margin-left: 10px;
             background-color: transparent;
         }
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
     // .header__feedback
 
@@ -131,7 +135,9 @@
         height: 35px;
         white-space: nowrap;
         text-transform: lowercase;
-        cursor: pointer;
+        p{
+            cursor: pointer;
+        }
     }
     &__item-name {
         display: flex;
@@ -318,6 +324,9 @@
     display: none;
 }
 @media (max-width: 768px) {
+    body.lock{
+        overflow: hidden;
+    }
     .menu-btn {
         position: relative;
         display: block;
@@ -349,10 +358,13 @@
         &__menu-wrapper.active {
             display: block;
             position: absolute;
+            overflow-Y: scroll;
+            overflow-x: hidden;
             left: 0;
             top: 0;
             width: 77.778vw;
             min-height: 100vh;
+            height: 100%;
             background: #000000;
             box-shadow: 0vw 0vw 2.778vw rgba(0, 0, 0, 0.25);
             border-radius: 0vw;
@@ -439,6 +451,8 @@
                 transform: translate(50%, 100%);
                 fill: white;
                 transition: 0.2s;
+                width: 5.556vw;
+                height: 2.222vw;
             }
         }
         &__item-catalog:hover {
@@ -467,6 +481,8 @@
         &__feedback-mobile {
             display: inline-block;
             img {
+                width: 6.667vw;
+                height: 6.667vw;
                 margin-right: 1.389vw;
             }
             a {
@@ -482,6 +498,7 @@
             img {
                 width: 33.333vw;
                 height: 8.333vw;
+                padding: 0;
             }
             p {
                 display: none;
@@ -499,6 +516,17 @@
 
         &__search {
             width: 100%;
+            height: 11.111vw;
+            padding: 2.778vw;
+            input {
+                font-size: 3.333vw;
+                line-height: 4.444vw;
+            }
+            button {
+                width: 5.556vw;
+                height: 5.556vw;
+                margin-left: 2.778vw;
+            }
         }
     }
 }

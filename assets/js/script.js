@@ -22,5 +22,5 @@ let headerWrap = document.querySelector('.header__menu-wrapper');
 menuBtn.addEventListener('click', function () {
     menuBtn.classList.toggle('active');
     headerWrap.classList.toggle('active');
-    bodyOverflow.classList.toggle('active');
+    bodyOverflow.classList.toggle('lock');
 })
