@@ -332,8 +332,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 1vw auto;
-        border: 1px solid #e3e3e3;
-        border-radius: 5px;
+        border: 0.278vw solid #e3e3e3;
+        border-radius: 1.389vw;
     }
     .menu-btn.active {
         background-image: url(../icon/burger-open.svg);
@@ -341,7 +341,7 @@
     }
     .header {
         position: relative;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 0px 2.778vw rgba(0, 0, 0, 0.25);
         width: 100vw;
         &__menu-wrapper {
             display: none;
@@ -354,9 +354,9 @@
             width: 77.778vw;
             min-height: 100vh;
             background: #000000;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-            border-radius: 0px;
-            padding: 20px 0;
+            box-shadow: 0vw 0vw 2.778vw rgba(0, 0, 0, 0.25);
+            border-radius: 0vw;
+            padding: 5.556vw 0;
         }
         &__menu {
             background-color: black;
@@ -374,7 +374,7 @@
             width: 100%;
             li {
                 padding: 5.556vw 0;
-                border-bottom: 1px solid #313131;
+                border-bottom: 0.278vw solid #313131;
             }
             .header__nested-item:last-child {
                 border-bottom: none;
@@ -382,6 +382,7 @@
             }
             p,
             a {
+                transition: 0.3s;
                 width: 100%;
             }
         }
@@ -428,18 +429,23 @@
         &__nested-item::before {
             content: url(../icon/icon-line-point.svg);
             margin-right: 2vw;
-            width: 20px;
+            width: 5.556vw;
         }
         &__item-catalog {
             a::before {
                 display: none;
             }
+            svg {
+                transform: translate(50%, 100%);
+                fill: white;
+                transition: 0.2s;
+            }
         }
-        &__item-catalog .header__item-name::after {
-            content: url(../icon/icon-arrow-right-white.svg);
-            display: block;
-            width: 40px;
-            height: 20px;
+        &__item-catalog:hover {
+            svg {
+                fill: #ee7f01;
+                transform: translate(50%, 100%) rotate(90deg);
+            }
         }
         &__feedback-wrap {
             display: none;
