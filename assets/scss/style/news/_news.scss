@@ -44,6 +44,15 @@
             font-size: 16px;
             line-height: 22px;
             margin-bottom: 10px;
+            overflow: hidden;
+            display: block;
+            max-height: 3em;
+            -webkit-line-clamp: 2;
+            display: box;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            white-space: normal;
         }
         a {
             width: 100%;
@@ -70,5 +79,14 @@
         line-height: 19px;
         padding-bottom: 10px;
         border-bottom: 1px solid #e3e3e3;
+        overflow: hidden;
+        display: block;
+        max-height: 4.5em;
+        -webkit-line-clamp: 3;
+        display: box;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        white-space: normal;
     }
 }

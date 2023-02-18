@@ -19,6 +19,15 @@
             line-height: 22px;
             color: black;
             margin-top: 10px;
+            overflow: hidden;
+            display: block;
+            max-height: 3em;
+            -webkit-line-clamp: 2;
+            display: box;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            white-space: normal;
         }
         span {
             float: right;
@@ -56,6 +65,62 @@
     @keyframes animLine {
         to {
             transform: translateX(-29.8%);
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .product__item {
+        width: calc(33% - 11px);
+    }
+}
+@media (max-width: 1024px) {
+    .product {
+        &__item {
+            width: calc(50% - 10px);
+            height: 45vw;
+        }
+        &__line {
+            transform: translateX(-40%);
+        }
+        &__image {
+            width: 100%;
+            height: 30vw;
+        }
+        &__img {
+            width: 100%;
+            height: 30vw;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .product {
+        &__list {
+            gap: 5.556vw;
+        }
+        &__item {
+            width: calc(50% - 2.778vw);
+            height: 61.111vw;
+            padding: 2.778vw;
+            p {
+                font-weight: 600;
+                font-size: 3.333vw;
+                line-height: 4.444vw;
+                margin: 0 0 1.389vw 0;
+            }
+        }
+        &__image {
+            width: 36.111vw;
+            height: 36.111vw;
+        }
+        &__img {
+            width: 36.111vw;
+            height: 36.111vw;
+        }
+        &__line {
+            width: 77.778vw;
+            height: 2.178vw;
+            object-fit: cover;
         }
     }
 }

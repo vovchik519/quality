@@ -45,12 +45,6 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-@media (max-width: 768px) {
-  html,
-  body {
-    font-size: 3.889vw;
-  }
-}
 
 body {
   overflow-x: hidden;
@@ -120,29 +114,10 @@ h3 {
   line-height: 27px;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 8.889vw;
-    line-height: 12.222vw;
-  }
-  h2 {
-    font-size: 6.667vw;
-    line-height: 9.167vw;
-  }
-  h3 {
-    font-size: 5.556vw;
-    line-height: 7.5vw;
-  }
-}
 .container {
   max-width: 1260px;
   padding: 0 40px;
   margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .container {
-    padding: 0vw 5.556vw;
-  }
 }
 
 .wrapper {
@@ -175,15 +150,6 @@ h3 {
   white-space: nowrap;
   transition: 0.3s;
 }
-@media (max-width: 768px) {
-  .button {
-    border-radius: 1.389vw;
-    font-size: 4.444vw;
-    line-height: 6.111vw;
-    padding: 2.778vw;
-    padding: 1.389vw 2.778vw;
-  }
-}
 
 .button.button-white {
   border: 1px solid #ee7f01;
@@ -207,8 +173,7 @@ h3 {
 }
 
 .page__list {
-  margin-top: 40px;
-  margin-bottom: 11px;
+  margin: 40px 0 11px;
   display: flex;
 }
 .page__list li {
@@ -261,6 +226,53 @@ h3 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 3.889vw;
+  }
+  .container {
+    padding: 0vw 5.556vw;
+  }
+  h1 {
+    font-size: 8.889vw;
+    line-height: 12.222vw;
+    margin-bottom: 8.333vw;
+  }
+  h2 {
+    font-size: 6.667vw;
+    line-height: 9.167vw;
+  }
+  h3 {
+    font-size: 5.556vw;
+    line-height: 7.5vw;
+  }
+  .button {
+    border-radius: 1.389vw;
+    font-size: 4.444vw;
+    line-height: 6.111vw;
+    padding: 2.778vw;
+    padding: 1.389vw 2.778vw;
+  }
+  .page__list {
+    margin: 6.667vw 0 2.778vw;
+  }
+  .page__list li {
+    font-size: 3.333vw;
+    line-height: 4.444vw;
+    margin-right: 1.389vw;
+    padding-right: 2.222vw;
+  }
+  .price {
+    font-weight: 700;
+    font-size: 6.667vw;
+    line-height: 9.167vw;
+  }
+  .price span {
+    font-weight: 400;
+    margin-left: 1.944vw;
+  }
+}
 .header {
   position: fixed;
   top: 0;

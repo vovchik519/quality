@@ -54,7 +54,6 @@
         transform: translateY(-50%);
         right: 20px;
         width: 15px;
-        height: 10px;
     }
     &__nested-wrapper {
         position: absolute;
@@ -100,6 +99,83 @@
         }
         li:hover a::after {
             transform: translateY(-50%) scale(1.35);
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .lists {
+        &__wrapper {
+            justify-content: flex-start;
+        }
+        &__item {
+            max-width: calc(50% - 10px);
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .lists {
+        &__wrapper {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 2.778vw 0;
+        }
+        &__item {
+            max-width: 100%;
+        }
+        &__wrap {
+            box-shadow: 0px 0px 2.778vw rgba(0, 0, 0, 0.25);
+            border-radius: 1.389vw;
+            column-gap: 2.778vw;
+            padding: 2.778vw;
+            img {
+                width: 13.889vw;
+                height: 13.889vw;
+            }
+            p {
+                font-size: 5vw;
+                line-height: 6.944vw;
+                margin-right: 7vw;
+            }
+        }
+        &__wrap::after {
+            content: "";
+            background-image: url(../icon/icon-arrow-bottom.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            right: 5.556vw;
+            width: 3.667vw;
+            height: 2vw;
+        }
+
+        &__nested-wrapper {
+            padding: 2.778vw 0 0 0;
+            margin-top: -2.778vw;
+            box-shadow: 0px 0px 1.389vw rgba(0, 0, 0, 0.25);
+            border-radius: 0 0 1.389vw 1.389vw;
+            li {
+                a {
+                    padding: 2.778vw;
+                    font-size: 4.444vw;
+                    line-height: 6.111vw;
+                    padding-right: 15.889vw;
+                }
+            }
+            a::after {
+                content: "";
+                background-image: url(../icon/icon-arrow-right-provide-mobile.svg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 8.333vw;
+                height: 5.556vw;
+                right: 5.556vw;
+            }
+            li:hover a {
+                color: #ee7f01;
+            }
+            li:hover a::after {
+                transform: translateY(-50%) scale(1.35);
+            }
         }
     }
 }
