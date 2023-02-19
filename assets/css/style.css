@@ -226,6 +226,17 @@ h3 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
+.border-dashed-300 {
+  position: absolute;
+  top: -1.667vw;
+  right: -1.667vw;
+  width: calc(100% + 3.333vw);
+  height: calc(100% + 3.333vw);
+  z-index: -1;
+  border-radius: 1.389vw;
+  box-shadow: 0px 0px 5.556vw rgba(0, 0, 0, 0.25);
+}
+
 @media (max-width: 768px) {
   html,
   body {
@@ -256,12 +267,25 @@ h3 {
   }
   .page__list {
     margin: 6.667vw 0 2.778vw;
+    height: 1.4em;
+    overflow-x: scroll;
+    white-space: nowrap;
   }
   .page__list li {
     font-size: 3.333vw;
     line-height: 4.444vw;
     margin-right: 1.389vw;
     padding-right: 2.222vw;
+  }
+  .page__list::-webkit-scrollbar {
+    height: 0.556vw;
+  }
+  .page__list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1.667vw transparent;
+  }
+  .page__list::-webkit-scrollbar-thumb {
+    border-radius: 2.778vw;
+    background-color: #ee7f01;
   }
   .price {
     font-weight: 700;

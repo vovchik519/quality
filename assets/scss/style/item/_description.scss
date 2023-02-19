@@ -8,10 +8,16 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 680px;
+        max-width: 680px;
         min-height: 480px;
         background: #ffffff;
         padding: 25px;
+        .border-mobile {
+            display: none;
+        }
+        .border-desctop {
+            display: block;
+        }
         h3 {
             margin-bottom: 20px;
         }
@@ -19,29 +25,84 @@
             margin-bottom: 30px;
             line-height: 19px;
         }
-        ul{
+        ul {
             margin-bottom: 30px;
             flex: 1 0 auto;
-            li{
+            li {
                 line-height: 19px;
                 margin-bottom: 5px;
-                span{
+                span {
                     display: inline-block;
                     width: 93px;
                     height: 1px;
                     margin: 0 5px;
-                    background-color: #E3E3E3;
+                    background-color: #e3e3e3;
                 }
             }
         }
-        .price{
+        .price {
             margin-bottom: 20px;
         }
     }
     .border-dashed-680 {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     }
-    .button{
+    .button {
         width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product__item {
+        &-wrapper {
+            flex-direction: column;
+            column-gap: 0;
+            row-gap: 5.556vw;
+        }
+        &-description {
+            flex-direction: column;
+            width: 100%;
+            min-height: 113.889vw;
+            padding: 5.556vw 2.778vw;
+            .border-mobile {
+                display: block;
+            }
+            .border-desctop {
+                display: none;
+            }
+            h3 {
+                margin-bottom: 2.778vw;
+            }
+            p {
+                margin-bottom: 5.556vw;
+                line-height: 5.278vw;
+            }
+            ul {
+                margin-bottom: 5.556vw;
+                li {
+                    line-height: 5.278vw;
+                    margin-bottom: 1.389vw;
+                    span {
+                        width: 25.833vw;
+                        height: 0.278vw;
+                        margin: 0 1.389vw;
+                    }
+                }
+            }
+            .price-wrap {
+                font-size: 6.667vw;
+                line-height: 9.167vw;
+                margin-bottom: 2.778vw;
+            }
+            .price {
+                margin-bottom: 0;
+            }
+        }
+        .border-dashed-680 {
+            box-shadow: 0px 0px 5.556vw rgba(0, 0, 0, 0.25);
+        }
+        .button {
+            width: 100%;
+        }
     }
 }
