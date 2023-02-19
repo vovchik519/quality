@@ -2,10 +2,8 @@
     &__tab-btn {
         display: flex;
         flex-direction: column;
-        background: #ffffff;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
-        padding: 2px;
         .tab-links {
             position: relative;
             display: inline-block;
@@ -17,6 +15,12 @@
             font-size: 20px;
             line-height: 27px;
             overflow-x: hidden;
+        }
+        .tab-links:first-child {
+            border-radius: 5px 5px 0 0;
+        }
+        .tab-links:last-child {
+            border-radius: 0 0 5px 5px;
         }
         .tab-links::before {
             content: "";
@@ -31,8 +35,8 @@
         .tab-links:last-child::before {
             display: none;
         }
-        .tab-links.active{
-            color: #EE7F01;
+        .tab-links.active {
+            color: #ee7f01;
         }
     }
     .tab-links {
@@ -56,5 +60,50 @@
     // .news__tab-wrapper
 
     &__tab-wrapper {
+    }
+}
+@media (max-width: 1279px) and (min-width: 769px) {
+    .main-news{
+        position: relative;
+    }
+    .news {
+        &__tab-btn {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .news {
+        &__tab-btn {
+            box-shadow: 0px 0px 2.778vw rgba(0, 0, 0, 0.25);
+            border-radius: 1.389vw;
+            width: 100%;
+            .tab-links {
+                width: 100%;
+                padding: 1.389vw;
+                font-size: 5.556vw;
+                line-height: 7.5vw;
+            }
+            .tab-links::before {
+                content: "";
+                height: 0.278vw;
+            }
+            .tab-links:first-child {
+                border-radius: 1.389vw 1.389vw 0 0;
+            }
+            .tab-links:last-child {
+                border-radius: 0 0 1.389vw 1.389vw;
+            }
+        }
+
+        // .news__tab
+
+        &__tab {
+            flex-direction: column;
+            margin-top: 0;
+            gap: 8.333vw 0;
+        }
     }
 }

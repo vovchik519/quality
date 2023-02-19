@@ -1,5 +1,6 @@
 .action {
     &__wrapper {
+        width: 1180px;
         margin-top: 70px;
         transform: translateX(-200px);
         h2 {
@@ -9,9 +10,11 @@
     // .action__image
     &__image {
         img {
-            width: 980px;
-            height: 356px;
+            max-width: 980px;
+            width: 100%;
+            max-height: 356px;
             border-radius: 5px;
+            object-fit: contain;
         }
     }
     // .action__product
@@ -24,14 +27,14 @@
         p {
             font-size: 24px;
             line-height: 33px;
-            width: 680px;
+            max-width: 680px;
         }
         span {
             font-weight: 600;
         }
         img {
-            width: 480px;
-            height: 198px;
+            max-width: 480px;
+            max-height: 198px;
             object-fit: cover;
         }
     }
@@ -43,10 +46,14 @@
             left: 0;
             z-index: 1;
             margin: 0;
+            width: 89px;
+            height: 47px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             span {
                 position: relative;
-                z-index: 2;
-                padding: 10px;
+                z-index: 1;
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 27px;
@@ -54,18 +61,23 @@
             }
         }
         .sale::before {
-            content: url(./../icon/sale.svg);
+            content: "";
+            background-image: url(./../icon/sale.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
             position: absolute;
             display: block;
-            width: 89px;
-            height: 47px;
+            width: 100%;
+            height: 100%;
         }
         .price__wrap {
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
             column-gap: 10px;
-            s,span{
+            margin-bottom: 10px;
+            s,
+            span {
                 line-height: 0.8em;
             }
         }
@@ -74,6 +86,93 @@
             opacity: 0.5;
             font-size: 16px;
             line-height: 22px;
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .action {
+        &__wrapper {
+            width: 100%;
+            transform: translateX(0);
+        }
+        &__image {
+            img {
+                max-width: 100%;
+                width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .action {
+        &__product {
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 20px;
+            p {
+                max-width: 100%;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .action {
+        &__wrapper {
+            margin-top: 13.889vw;
+            h2 {
+                margin-bottom: 40px;
+            }
+        }
+        // .action__image
+        &__image {
+            img {
+                width: 88.889vw;
+                height: 33.333vw;
+                max-width: none;
+                max-height: none;
+                border-radius: 1.389vw;
+            }
+        }
+        // .action__product
+
+        &__product {
+            gap: 2.778vw;
+            margin-bottom: 13.889vw;
+            p {
+                font-size: 3.889vw;
+                line-height: 5.278vw;
+            }
+            img {
+                width: 88.889vw;
+                height: 55.556vw;
+            }
+        }
+        .product__item {
+            .sale {
+                width: 16.111vw;
+                height: 8.056vw;
+                span {
+                    font-size: 3.889vw;
+                    line-height: 5.278vw;
+                }
+            }
+            .price__wrap {
+                column-gap: 2.778vw;
+                margin: 2.778vw 0 1.389vw;
+                s,
+                span {
+                    line-height: 0.8em;
+                }
+            }
+            .before-price {
+                font-size: 3.333vw;
+                line-height: 4.444vw;
+            }
         }
     }
 }

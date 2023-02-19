@@ -119,6 +119,9 @@ h3 {
   padding: 0 40px;
   margin: 0 auto;
 }
+.container-x {
+  overflow-x: hidden;
+}
 
 .wrapper {
   display: flex;
@@ -318,7 +321,6 @@ h3 {
   display: flex;
   align-items: center;
   margin: 0 -5px;
-  margin-right: 36px;
 }
 .header__logo img {
   width: 210px;
@@ -628,7 +630,7 @@ h3 {
     left: 0;
     top: 0;
     width: 77.778vw;
-    min-height: 100vh;
+    min-height: 101vh;
     height: 100%;
     background: #000000;
     box-shadow: 0vw 0vw 2.778vw rgba(0, 0, 0, 0.25);
@@ -907,6 +909,7 @@ h3 {
   }
   .footer__list {
     flex-direction: column;
+    gap: 8.333vw;
   }
   .footer__menu {
     order: 2;

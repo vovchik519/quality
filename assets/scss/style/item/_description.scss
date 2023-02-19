@@ -43,6 +43,9 @@
         .price {
             margin-bottom: 20px;
         }
+        .price-text {
+            display: none;
+        }
     }
     .border-dashed-680 {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
@@ -97,7 +100,11 @@
             .price {
                 margin-bottom: 0;
             }
+            .price-text {
+                display: inline-block;
+            }
         }
+
         .border-dashed-680 {
             box-shadow: 0px 0px 5.556vw rgba(0, 0, 0, 0.25);
         }

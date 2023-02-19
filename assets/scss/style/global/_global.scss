@@ -99,6 +99,9 @@ h3 {
     max-width: 1260px;
     padding: 0 40px;
     margin: 0 auto;
+    &-x{
+        overflow-x: hidden;
+    }
 }
 .wrapper {
     display: flex;

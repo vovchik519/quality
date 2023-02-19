@@ -1,4 +1,10 @@
 .page__news {
+    &-time-mobile {
+        display: none;
+    }
+    &-time-desktop {
+        display: block;
+    }
     &-top {
         display: flex;
         justify-content: space-between;
@@ -14,6 +20,26 @@
         time {
             color: #ee7f01;
             margin-left: 6.5px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .page__news {
+        &-time-mobile {
+            display: block;
+            font-size: 3.333vw;
+            line-height: 4.444vw;
+            margin-top: 6.944vw;
+            time {
+                color: #ee7f01;
+                margin-left: 1.389vw;
+            }
+        }
+        &-time-desktop {
+            display: none;
+        }
+        &-top {
+            margin-bottom: 13.889vw;
         }
     }
 }
