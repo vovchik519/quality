@@ -408,6 +408,7 @@
             li {
                 padding: 5.556vw 0;
                 border-bottom: 0.278vw solid #313131;
+                text-transform: lowercase;
             }
             .header__nested-item:last-child {
                 border-bottom: none;
@@ -460,9 +461,14 @@
             }
         }
         &__nested-item::before {
-            content: url(../icon/icon-line-point.svg);
-            margin-right: 2vw;
+            content: "";
+            display: inline-block;
+            background-image: url(../icon/icon-line-point.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-right: 2.778vw;
             width: 5.556vw;
+            height: 2vw;
         }
         &__item-catalog {
             a::before {

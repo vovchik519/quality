@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    a{
+    a {
         color: black;
     }
     &__item {
@@ -25,6 +25,36 @@
         p {
             font-weight: 600;
             font-size: 18px;
+            line-height: 125%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    #shop {
+        h2 {
+            margin-bottom: 5.556vw;
+        }
+    }
+    .shop {
+        gap: 5.556vw;
+        a{
+            width: calc(50% - 2.778vw);
+        }
+        &__item {
+            flex-direction: column;
+            justify-content: center;
+            column-gap: 2.778vw;
+            padding: 2.778vw 6.944vw;
+            width: 100%;
+            border: 0.278vw solid #ee7f01;
+            border-radius: 1.389vw;
+            img {
+                width: 27.778vw;
+                height: 13.889vw;
+            }
+            p {
+                font-size: 5vw;
+            }
         }
     }
 }
