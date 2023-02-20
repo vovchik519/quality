@@ -9,36 +9,41 @@
 }
 .dealers__wrap {
   display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  gap: 20px;
 }
 .dealers__wrap li {
   position: relative;
   font-size: 20px;
   line-height: 27px;
-  padding-left: 40px;
   margin-bottom: 15px;
+  display: flex;
 }
 .dealers__wrap li::before {
-  content: url(../icon/icon-check.svg);
-  position: absolute;
+  content: "";
+  background-image: url(../icon/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 4px 10px 0 0;
   display: block;
-  top: 5px;
-  left: 0px;
+  min-width: 24px;
+  min-height: 24px;
   width: 24px;
   height: 24px;
 }
-.dealers__wrap img {
-  width: 350px;
-  height: 87px;
+.dealers__wrap a {
+  height: 100%;
 }
 .dealers__wrap p {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: 0.02em;
+  margin-bottom: 10px;
   text-decoration-line: underline;
   color: #ee7f01;
+}
+.dealers__wrap img {
+  width: 350px;
+  height: 87px;
 }
 .dealers__button-wrap {
   display: flex;
@@ -48,4 +53,72 @@
 }
 .dealers .button {
   width: 380px;
+}
+
+@media (max-width: 1024px) {
+  .dealers__wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .dealers__wrap a {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .dealers__wrapper {
+    box-shadow: 0px 0px 2.778vw rgba(0, 0, 0, 0.25);
+    border-radius: 1.389vw;
+    padding: 5.556vw 2.778vw;
+  }
+  .dealers__wrapper h2 {
+    margin-bottom: 5.556vw;
+  }
+  .dealers__wrap {
+    gap: 1.389vw;
+  }
+  .dealers__wrap li {
+    font-size: 3.333vw;
+    line-height: 4.444vw;
+    margin-bottom: 1.389vw;
+  }
+  .dealers__wrap li::before {
+    min-width: 5.556vw;
+    min-height: 5.556vw;
+    width: 5.556vw;
+    height: 5.556vw;
+    margin: 1.111vw 2.778vw 0 0;
+  }
+  .dealers__wrap a {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2.778vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .dealers__wrap p {
+    font-size: 3.333vw;
+    line-height: 4.444vw;
+    margin-bottom: 0;
+  }
+  .dealers__wrap img {
+    width: 100%;
+    height: 22.222vw;
+  }
+  .dealers__button-wrap {
+    width: 100%;
+    margin-top: 15.278vw;
+  }
+  .dealers .button {
+    width: 100%;
+    font-size: 3.889vw;
+    line-height: 5.278vw;
+    padding: 2.778vw;
+  }
 }
