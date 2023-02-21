@@ -325,6 +325,27 @@ h3 {
     display: none;
   }
 }
+@font-face {
+  font-family: "Open Sans";
+  src: url("./../font/fonts/OpenSans-Regular.woff2") format("woff2"), url("./../font/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("./../font/fonts/OpenSans-SemiBold.woff2") format("woff2"), url("./../font/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("./../font/fonts/OpenSans-Bold.woff2") format("woff2"), url("./../font/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 .header {
   position: fixed;
   top: 0;
