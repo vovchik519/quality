@@ -1,8 +1,9 @@
 .about__firstscreen {
   position: relative;
   width: 100vw;
-  height: calc(100vh - 118px);
+  min-height: calc(100vh - 118px);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  padding-bottom: 50px;
   border-radius: 5px;
 }
 .about__firstscreen img {
@@ -26,25 +27,68 @@
   row-gap: 20px;
 }
 .about__firstscreen li {
-  position: relative;
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
   background: #f6f6f6;
   border-radius: 5px;
-  padding: 10px 10px 10px 45px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .about__firstscreen li::before {
-  content: url(../icon/icon-check-about.svg);
-  position: absolute;
+  content: "";
+  background-image: url(../icon/icon-check-about.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: block;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 12px;
+  min-width: 24px;
+  min-height: 24px;
   width: 24px;
   height: 24px;
 }
 
+@media (max-width: 768px) {
+  .about__firstscreen {
+    position: relative;
+    width: 100vw;
+    min-height: 138.889vw;
+    box-shadow: 0vw 0vw 5.556vw rgba(0, 0, 0, 0.25);
+    padding-bottom: 5.556vw;
+    border-radius: 0;
+  }
+  .about__firstscreen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .about__firstscreen h2 {
+    padding-top: 0;
+    display: none;
+  }
+  .about__firstscreen ul {
+    margin-top: 13.889vw;
+    row-gap: 2.778vw;
+  }
+  .about__firstscreen li {
+    font-size: 3.889vw;
+    line-height: 5.278vw;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    gap: 2.778vw;
+  }
+  .about__firstscreen li::before {
+    min-width: 6.667vw;
+    min-height: 6.667vw;
+    width: 6.667vw;
+    height: 6.667vw;
+  }
+}
 .about__company {
   margin-top: 70px;
 }
@@ -53,7 +97,6 @@
   align-items: center;
   -moz-column-gap: 15px;
        column-gap: 15px;
-  margin-top: 45px;
   font-size: 28px;
   line-height: 38px;
 }
@@ -64,8 +107,7 @@
 .about__wiki {
   margin-top: 35px;
   display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  gap: 20px;
 }
 .about__wiki p {
   font-size: 20px;
@@ -79,32 +121,80 @@
   width: 380px;
   height: 350px;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .about__wiki {
+    flex-direction: column;
+  }
+  .about__wiki img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .about__company {
+    margin-top: 13.889vw;
+  }
+  .about__subtitle {
+    gap: 2.778vw;
+    font-size: 5.556vw;
+    line-height: 7.5vw;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .about__subtitle span {
+    display: none;
+  }
+  .about__subtitle img {
+    width: 100%;
+    height: 22.222vw;
+  }
+  .about__wiki {
+    margin-top: 8.333vw;
+    gap: 5.556vw;
+  }
+  .about__wiki p {
+    font-size: 3.889vw;
+    line-height: 5.278vw;
+  }
+  .about__wiki img {
+    width: 100vw;
+    transform: translateX(-5.63vw);
+    height: 69.444vw;
+    border-radius: 1.389vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .about__team {
   margin-top: 70px;
 }
 .about__team h2 {
   font-size: 32px;
   line-height: 44px;
+  margin-bottom: 48px;
 }
 .about__team ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 30px;
-  margin-top: 48px;
+  gap: 30px;
+  margin-top: 40px;
 }
 .about__team li {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 270px;
   min-height: 295px;
   background-color: white;
   padding: 20px 40px;
 }
-.about__team li p {
+.about__team li h3 {
   text-align: center;
   font-weight: 600;
   font-size: 16px;
@@ -125,4 +215,51 @@
 }
 .about__team .border-dashed-280 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .about__team {
+    margin-top: 13.889vw;
+  }
+  .about__team h2 {
+    font-size: 8.889vw;
+    line-height: 12.222vw;
+    margin-bottom: 8.333vw;
+  }
+  .about__team ul {
+    width: 100%;
+    gap: 8.333vw;
+    padding-bottom: 5.556vw;
+    margin-top: 5.556vw;
+    border-bottom: 0.278vw solid #7b7b7b;
+  }
+  .about__team ul:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .about__team li {
+    width: 40vw;
+    min-height: 69.889vw;
+    padding: 2.778vw;
+  }
+  .about__team li h3 {
+    font-size: 3.5vw;
+    line-height: 120%;
+  }
+  .about__team li img {
+    width: 36.111vw;
+    height: 36.111vw;
+    border-radius: 50%;
+    margin: 2.778vw 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about__team li .about-date-info {
+    font-weight: 400;
+    font-size: 3.889vw;
+    line-height: 5.278vw;
+  }
+  .about__team .border-dashed-280 {
+    box-shadow: none;
+  }
 }

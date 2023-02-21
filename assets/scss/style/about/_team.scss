@@ -4,23 +4,25 @@
         h2 {
             font-size: 32px;
             line-height: 44px;
+            margin-bottom: 48px;
         }
         ul {
             display: flex;
             flex-wrap: wrap;
-            gap: 40px 30px;
-            margin-top: 48px;
+            gap: 30px;
+            margin-top: 40px;
         }
         li {
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             width: 270px;
             min-height: 295px;
             background-color: white;
             padding: 20px 40px;
-            p {
+            h3 {
                 text-align: center;
                 font-weight: 600;
                 font-size: 16px;
@@ -41,6 +43,53 @@
         }
         .border-dashed-280 {
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        &__team {
+            margin-top: 13.889vw;
+            h2 {
+                font-size: 8.889vw;
+                line-height: 12.222vw;
+                margin-bottom: 8.333vw;
+            }
+            ul {
+                width: 100%;
+                gap: 8.333vw;
+                padding-bottom: 5.556vw;
+                margin-top: 5.556vw;
+                border-bottom: 0.278vw solid #7b7b7b;
+            }
+            ul:last-child{
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+            li {
+                width: 40vw;
+                min-height: 69.889vw;
+                padding: 2.778vw;
+                h3 {
+                    font-size: 3.5vw;
+                    line-height: 120%;
+                }
+                img {
+                    width: 36.111vw;
+                    height: 36.111vw;
+                    border-radius: 50%;
+                    margin: 2.778vw 0;
+                    object-fit: cover;
+                }
+                .about-date-info {
+                    font-weight: 400;
+                    font-size: 3.889vw;
+                    line-height: 5.278vw;
+                }
+            }
+            .border-dashed-280 {
+                box-shadow: none;
+            }
         }
     }
 }

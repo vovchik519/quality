@@ -11,7 +11,6 @@
         display: flex;
         align-items: center;
         column-gap: 15px;
-        margin-top: 45px;
         font-size: 28px;
         line-height: 38px;
         img {
@@ -25,7 +24,7 @@
     &__wiki {
         margin-top: 35px;
         display: flex;
-        column-gap: 20px;
+        gap: 20px;
         p {
             font-size: 20px;
             line-height: 27px;
@@ -38,6 +37,62 @@
             width: 380px;
             height: 350px;
             border-radius: 5px;
+            object-fit: cover;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .about {
+        &__wiki {
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        // .about__company
+
+        &__company {
+            margin-top: 13.889vw;
+        }
+
+        // .about__subtitle
+
+        &__subtitle {
+            gap: 2.778vw;
+            font-size: 5.556vw;
+            line-height: 7.5vw;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: center;
+            span {
+                display: none;
+            }
+            img {
+                width: 100%;
+                height: 22.222vw;
+            }
+        }
+
+        // .about__wiki
+
+        &__wiki {
+            margin-top: 8.333vw;
+            gap: 5.556vw;
+            p {
+                font-size: 3.889vw;
+                line-height: 5.278vw;
+            }
+            img {
+                width: 100vw;
+                transform: translateX(-5.63vw);
+                height: 69.444vw;
+                border-radius: 1.389vw;
+                object-fit: cover;
+            }
         }
     }
 }
