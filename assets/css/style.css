@@ -41,7 +41,7 @@ body {
   width: 100%;
   font-size: 100%;
   font-size: 14px;
-  font-display: block;
+  font-display: swap;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
