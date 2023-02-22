@@ -115,6 +115,755 @@
             </div>
         </header>
         <main class="main">
+            <div id="map" class="map" style="width: 500px; height: 400px"></div>
+            <ul id="locations-list">
+                <li>
+                    <p onclick="showLocationOnMap('Москва')">Москва</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Александров')">Александров</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Альметьевск')">Альметьевск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Анапа')">Анапа</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Арзамас')">Арзамас</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Балаково')">Балаково</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Барнаул')">Барнаул</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Белгород')">Белгород</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Белебей')">Белебей</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Бийск')">Бийск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Богородск')">Богородск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Бор')">Бор</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Брянск')">Брянск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Бугульма')">Бугульма</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Бугуруслан')">Бугуруслан</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Бузулук')">Бузулук</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Пермь')">Пермь</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Санкт-Петербург')">Санкт-Петербург</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Уфа')">Уфа</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ульяновск')">Ульяновск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Чебоксары')">Чебоксары</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Волжск')">Волжск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Вологда')">Вологда</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ворсма')">Ворсма</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Воскресенское')">Воскресенское</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Воткинск')">Воткинск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Выкса')">Выкса</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Вязники')">Вязники</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Глазов')">Глазов</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Городец')">Городец</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Гусь-Хрустальный')">Гусь-Хрустальный</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Дзержинск')">Дзержинск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Димитровград')">Димитровград</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Екатеринбург')">Екатеринбург</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Заволжье')">Заволжье</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Заинск')">Заинск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Зеленодольск')">Зеленодольск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Иваново')">Иваново</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ижевск')">Ижевск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Йошкар-Ола')">Йошкар-Ола</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Казань')">Казань</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кинешма')">Кинешма</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ковров')">Ковров</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кольчугино')">Кольчугино</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Красноярск')">Красноярск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кстово')">Кстово</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кузнецк')">Кузнецк</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Курск')">Курск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Липецк')">Липецк</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Лысково')">Лысково</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Можга')">Можга</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Муром')">Муром</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Мыски&nbsp;')">Мыски&nbsp;</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Нижний Новгород')">Нижний Новгород</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Набережные Челны')">Набережные Челны</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Нижнекамск')">Нижнекамск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Новомосковск')">Новомосковск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Новосибирск')">Новосибирск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Октябрьский')">Октябрьский</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Павлово')">Павлово</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Пенза')">Пенза</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Первомайск')">Первомайск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Салават')">Салават</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Самара')">Самара</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Саранск')">Саранск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сарапул')">Сарапул</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Саратов')">Саратов</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Саров')">Саров</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Семенов')">Семенов</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сергач')">Сергач</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сочи')">Сочи</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сызрань')">Сызрань</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Тамбов')">Тамбов</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Тверь')">Тверь</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Тольятти')">Тольятти</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Череповец')">Череповец</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Чистополь')">Чистополь</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Шарья')">Шарья</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Шахунья')">Шахунья</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Шуя')">Шуя</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Краснодар')">Краснодар</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Астрахань')">Астрахань</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Соликамск')">Соликамск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Тула')">Тула</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ефремов')">Ефремов</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Киржач')">Киржач</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Бердск')">Бердск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Киселевск')">Киселевск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ишимбай')">Ишимбай</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Оренбург')">Оренбург</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Югорск')">Югорск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Владикавказ')">Владикавказ</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Псков')">Псков</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кемерово')">Кемерово</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Новокузнецк')">Новокузнецк</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Междуреченск')">Междуреченск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ленинск-Кузнецкий')">Ленинск-Кузнецкий</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Уссурийск')">Уссурийск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Волжский')">Волжский</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Яр')">Яр</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сердобск')">Сердобск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Челябинск')">Челябинск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Алексеевское')">Алексеевское</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Орск')">Орск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Шарлык')">Шарлык</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Базарные Матаки')">Базарные Матаки</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Рыбная Слобода')">Рыбная Слобода</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Мамли-Козяково-Челны')">Мамли-Козяково-Челны</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Арск')">Арск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Большая Атня')">Большая Атня</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Дубьязы')">Дубьязы</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Болгар')">Болгар</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Старый Иштеряк')">Старый Иштеряк</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Красные Четаи')">Красные Четаи</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Вольск')">Вольск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Петровск')">Петровск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Энгельс')">Энгельс</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Борское')">Борское</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Безенчук')">Безенчук</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Волгоград')">Волгоград</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Чусовой')">Чусовой</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Баймак')">Баймак</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Аскарово')">Аскарово</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Бакалы')">Бакалы</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ардатов')">Ардатов</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Юкаменское')">Юкаменское</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Матвеевка')">Матвеевка</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Новотроицк')">Новотроицк</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Медногорск')">Медногорск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Арсеньев')">Арсеньев</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Чугуевка')">Чугуевка</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Балезино')">Балезино</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Орехово-Зуево')">Орехово-Зуево</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Дмитров')">Дмитров</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Бронницы')">Бронницы</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кашира')">Кашира</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Нижний Ломов')">Нижний Ломов</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Стерлитамак')">Стерлитамак</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Урюпинск')">Урюпинск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Михайловка')">Михайловка</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Азнакаево')">Азнакаево</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Аксай')">Аксай</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Аксубаево пгт')">Аксубаево пгт</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Архангельск')">Архангельск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Афанасьево')">Афанасьево</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Бавлы')">Бавлы</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Балахна')">Балахна</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Барыш')">Барыш</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Беломорск')">Беломорск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Белорецк')">Белорецк</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Березники')">Березники</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Богатые Сабы')">Богатые Сабы</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Большое мурашкино')">Большое мурашкино</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Визинга')">Визинга</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Воронеж')">Воронеж</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Высокогорский Район')">Высокогорский Район</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Вышний Волочек')">Вышний Волочек</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Якшур-Бодья')">Якшур-Бодья</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Яранск')">Яранск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Гай')">Гай</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Госпитомник')">Госпитомник</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Евпатория')">Евпатория</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Елабуга')">Елабуга</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ермолаево')">Ермолаево</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Жердевка')">Жердевка</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Жирновск')">Жирновск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Звенигово')">Звенигово</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Зеленоград')">Зеленоград</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Илебер')">Илебер</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Инза')">Инза</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('К.-Чепецк')">К.-Чепецк</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Калуга')">Калуга</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кемь')">Кемь</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Киржач')">Киржач</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Киров')">Киров</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Клетня')">Клетня</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ковернино')">Ковернино</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ковылкино')">Ковылкино</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Конаково')">Конаково</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кондопога')">Кондопога</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Коряжма')">Коряжма</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Котельнич')">Котельнич</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кошки')">Кошки</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Краснознаменск')">Краснознаменск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Краснокамск')">Краснокамск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Краснослободск')">Краснослободск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кубинка')">Кубинка</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кузоватово')">Кузоватово</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кукмор')">Кукмор</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кумертау')">Кумертау</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Кушнаренково')">Кушнаренково</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Куюки')">Куюки</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Лаишево')">Лаишево</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Майна')">Майна</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Мамадыш')">Мамадыш</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Медвежьегорск')">Медвежьегорск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Меленки')">Меленки</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Мелеуз')">Мелеуз</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Мичуринск')">Мичуринск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Морки')">Морки</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Моршанск')">Моршанск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Навашино')">Навашино</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Невинномысск')">Невинномысск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Нефтекамск')">Нефтекамск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Николаевка')">Николаевка</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Новохоперск')">Новохоперск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Новочебоксарск')">Новочебоксарск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Новошешминск')">Новошешминск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ногинск')">Ногинск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Озерск')">Озерск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Олонец')">Олонец</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Омутнинск')">Омутнинск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Орел')">Орел</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Оричи')">Оричи</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Перевоз')">Перевоз</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Петрозаводск')">Петрозаводск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Печера')">Печера</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Разумное')">Разумное</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Раменское')">Раменское</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Редкино')">Редкино</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ростов на Дону')">Ростов на Дону</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('с.Красноусольское')">с.Красноусольское</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Северодвинск')">Северодвинск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сегежа')">Сегежа</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сенгилей')">Сенгилей</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Серов')">Серов</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Слободской')">Слободской</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Советск')">Советск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сортавала')">Сортавала</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Старый Оскол')">Старый Оскол</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Строитель')">Строитель</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сухадол')">Сухадол</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Сывтывкар')">Сывтывкар</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Тавда')">Тавда</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Тетюши')">Тетюши</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Торжок')">Торжок</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Трубчевск')">Трубчевск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Тюлячи')">Тюлячи</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Тюмень')">Тюмень</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Унеча')">Унеча</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ухта')">Ухта</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Урдома')">Урдома</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Уржум')">Уржум</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Усинск')">Усинск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Ханты-Мансийск')">Ханты-Мансийск</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Харабали')">Харабали</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Чайковский')">Чайковский</p>
+                </li>
+                <li>
+                    <p onclick="showLocationOnMap('Шентала ж/д станция')">Шентала ж/д станция</p>
+                </li>
+            </ul>
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=4fcbf4be-dafa-48f6-adca-da21a39f9a75&lang=ru_RU"
+                type="text/javascript"></script>
         </main>
         <footer class="footer">
             <div class="container">
@@ -189,8 +938,9 @@
             </div>
         </footer>
     </div>
-    
+
     <script src="./../assets/js/script.js"></script>
+    <script src="./../assets/js/map.js"></script>
 </body>
 
 </html>
